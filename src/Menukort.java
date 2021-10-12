@@ -41,36 +41,60 @@ public class Menukort {
         String navn = scan.nextLine();
 
         System.out.println("Kundens Pizza bestilling");
-        int pizzaValg = scan.nextInt();
 
 
+        ArrayList<String> liste = new ArrayList();
+        boolean bestilling = true;
+        while (bestilling){
+            System.out.println("vælg pizza");
+            int pizzaValg = scan.nextInt();
 
-        while (pizzaValg != 7){
+            switch (pizzaValg) {
 
-            if (pizzaValg == 1){
+            case 1:
                 System.out.println("1. Vesuvio");
+                liste.add("1. Vesuvio");
                 break;
-            } else if (pizzaValg == 2){
+            case 2:
                 System.out.println("2. Amerikaner");
+                liste.add(". Amerikaner");
                 break;
-            }else if (pizzaValg == 3){
+            case 3:
                 System.out.println("3. Cacciatore");
+                liste.add("3. Cacciatore");
                 break;
-            }else if (pizzaValg == 4){
+            case 4:
                 System.out.println("4. Dennis");
+                liste.add("4. Dennis");
                 break;
-            }else if (pizzaValg == 5){
+            case 5:
                 System.out.println("5. Bertil");
+                liste.add("5. Bertil");
                 break;
-            }else if (pizzaValg == 6){
+            case 6:
                 System.out.println("6. Silvia");
+                liste.add("6. Silvia");
                 break;
-            }
+                case 99:
+                    bestilling=false;
+                    break;
+
+                default:
+                    System.out.println("den har vi ikke");
+                    break;
 
         }
 
-        System.out.println("Kundes navn: " + navn);
-        System.out.println("Pizza: " + pizzaValg);
+        }
+
+
+         System.out.println();
+         System.out.println("Kundens Bestilling: ");
+         System.out.println("Kundes navn: " + navn);
+         System.out.println("Pizza: " );
+         System.out.println(liste.toString());
+    }
+
     }
 
 
@@ -79,5 +103,8 @@ public class Menukort {
 
 
 
-}
+
+
+
+
 
