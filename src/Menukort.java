@@ -51,33 +51,38 @@ public class Menukort {
 
             switch (pizzaValg) {
 
-            case "1":
-            case "vesuvio":
-                System.out.println("1. Vesuvio");
-                liste.add("1. Vesuvio");
-                break;
-            case "2":
-            case "Amerikaner":
-                System.out.println("2. Amerikaner");
-                liste.add(". Amerikaner");
-                break;
-            case "3":
-                System.out.println("3. Cacciatore");
-                liste.add("3. Cacciatore");
-                break;
-            case "4":
-                System.out.println("4. Dennis");
-                liste.add("4. Dennis");
-                break;
-            case "5":
-                System.out.println("5. Bertil");
-                liste.add("5. Bertil");
-                break;
-            case "6":
-                System.out.println("6. Silvia");
-                liste.add("6. Silvia");
-                break;
+                case "1":
+                case "vesuvio":
+                    System.out.println("1. Vesuvio");
+                    liste.add("1. Vesuvio");
+                    break;
+                case "2":
+                case "Amerikaner":
+                    System.out.println("2. Amerikaner");
+                    liste.add(". Amerikaner");
+                    break;
+                case "3":
+                case "Cacciatore":
+                    System.out.println("3. Cacciatore");
+                    liste.add("3. Cacciatore");
+                    break;
+                case "4":
+                case "Dennis":
+                    System.out.println("4. Dennis");
+                    liste.add("4. Dennis");
+                    break;
+                case "5":
+                case "Bertil":
+                    System.out.println("5. Bertil");
+                    liste.add("5. Bertil");
+                    break;
+                case "6":
+                case "Silvia":
+                    System.out.println("6. Silvia");
+                    liste.add("6. Silvia");
+                    break;
                 case "99":
+                case "exit":
                     bestilling=false;
                     break;
 
