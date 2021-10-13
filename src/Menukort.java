@@ -17,14 +17,40 @@ public class Menukort {
         Pizza pizza3 = new Pizza("3. Cacciatore: ","tomatsauce, ost, pepperoni og oregano................................",57);
         pizzaList.add(pizza3);
 
-        Pizza pizza4 = new Pizza("4. Dennis: ","tomatsauce, ost, skinke, pepperoni, cocktailpølser og oregano............",65);
+        Pizza pizza4 = new Pizza("4. Carbona: ","tomatsauce, ost, kødsauce, spaghetti, cocktailpølser, og oregano...........",61);
         pizzaList.add(pizza4);
 
-        Pizza pizza5 = new Pizza("5. Bertil: ","tomatsauce, ost, bacon og oregano........................................",57);
+        Pizza pizza5 = new Pizza("5. Dennis: ","tomatsauce, ost, skinke, pepperoni, cocktailpølser og oregano............",65);
         pizzaList.add(pizza5);
 
-        Pizza pizza6 = new Pizza("6. Silvia: ","tomatsauce, ost, pepperoni, rød peber, løg, oliven, og oregano...........",61);
+        Pizza pizza6 = new Pizza("6. Bertil: ","tomatsauce, ost, bacon og oregano........................................",57);
         pizzaList.add(pizza6);
+
+        Pizza pizza7 = new Pizza("7. Silvia: ","tomatsauce, ost, pepperoni, rød peber, løg, oliven, og oregano...........",61);
+        pizzaList.add(pizza7);
+
+        Pizza pizza8 = new Pizza("8. Victoria: ","tomatsauce, ost, skinke, ananas, champignon, løg og oregano............",61);
+        pizzaList.add(pizza8);
+
+        Pizza pizza9 = new Pizza("9. Toronfo: ","tomatsauce, ost, skinke, bacon, kebab, chili og oregano.................",61);
+        pizzaList.add(pizza9);
+
+        Pizza pizza10 = new Pizza("10. Capricciosa: ","tomatsauce, ost, skinke, champignon, og oregano...................",61);
+        pizzaList.add(pizza10);
+
+        Pizza pizza11 = new Pizza("11. Hawai: ","tomatsauce, ost, skinke, ananas, og oregano.............................",61);
+        pizzaList.add(pizza11);
+
+        Pizza pizza12 = new Pizza("12. Le Blissola: ","tomatsauce, ost, rejer og oregano.................................",61);
+        pizzaList.add(pizza12);
+
+        Pizza pizza13 = new Pizza("13. Venezia: ","tomatsauce, ost, skinke, bacon, og oregano.............................",61);
+        pizzaList.add(pizza13);
+
+        Pizza pizza14 = new Pizza("14. Mafia: ","tomatsauce, ost, pepperoni, bacon, løg og oregano........................",61);
+        pizzaList.add(pizza14);
+
+
 
         System.out.println("--------------------------------MARIOS PIZZAER-------------------------------------------");
         System.out.println(pizza1);
@@ -68,20 +94,61 @@ public class Menukort {
                     liste.add("3. Cacciatore");
                     break;
                 case "4":
-                case "dennis":
-                    System.out.println("4. Dennis");
-                    liste.add("4. Dennis");
+                case "Carbona":
+                    System.out.println("4. Carbona");
+                    liste.add("4. Carbona");
                     break;
                 case "5":
-                case "bertil":
-                    System.out.println("5. Bertil");
-                    liste.add("5. Bertil");
+                case "Dennis":
+                    System.out.println("5. Dennis");
+                    liste.add("5. Dennis");
                     break;
                 case "6":
+                case "bertil":
+                    System.out.println("5. Bertil");
+                    liste.add("6. Bertil");
+                    break;
+                case "7":
                 case "silvia":
                     System.out.println("6. Silvia");
+                    liste.add("7. Silvia");
+                    break;
+                case "8":
+                case "Silvia":
+                    System.out.println("6. Silvia");
+                    liste.add("8. Silvia");
+                    break;
+                case "9":
+                case "Toronfo":
+                    System.out.println("9. Toronfo");
+                    liste.add("9. Toronfo");
+                    break;
+                case "10":
+                case "Capricciosa":
+                    System.out.println("10. Silvia");
                     liste.add("6. Silvia");
                     break;
+                case "11":
+                case "Hawai":
+                    System.out.println("11. Hawai");
+                    liste.add("11. Hawai");
+                    break;
+                case "12":
+                case "Le Blissola":
+                    System.out.println("12. Le Blissola");
+                    liste.add("12. Le Blissola");
+                    break;
+                case "13":
+                case "Venezia":
+                    System.out.println("13. Venezia");
+                    liste.add("13. Venezia");
+                    break;
+                case "14":
+                case "Mafia":
+                    System.out.println("14. Mafia");
+                    liste.add("14. Mafia");
+                    break;
+
                 case "99":
                 case "exit":
                     bestilling=false;
