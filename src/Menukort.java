@@ -81,22 +81,22 @@ public class Menukort {
         pizzaList.add(pizza24);
 
 
-        Pizza pizza25 = new Pizza("25. Skopizza", "tomatsauce, gedeost, snørrebånd, såler og mudder......................", 76);
+        Pizza pizza25 = new Pizza("25. Skopizza: ", "tomatsauce, gedeost, snørrebånd, såler og mudder......................", 76);
         pizzaList.add(pizza25);
 
-        Pizza pizza26 = new Pizza("26. Prutte", "våd prut, tør prut, ulækker prut og lækker prut.........................", 15);
+        Pizza pizza26 = new Pizza("26. Prutte: ", "våd prut, tør prut, ulækker prut og lækker prut.........................", 15);
         pizzaList.add(pizza26);
 
-        Pizza pizza27 = new Pizza("27. Remo/Mayo", "remoulade, mayonaise, ranch, fransk hotdogdressing...................", 50);
+        Pizza pizza27 = new Pizza("27. Remo/Mayo: ", "remoulade, mayonaise, ranch, fransk hotdogdressing...................", 50);
         pizzaList.add(pizza27);
 
-        Pizza pizza28 = new Pizza("28. Nintendo", "Mario, Pikachu, Link, Samus og Kirby..................................", 60);
+        Pizza pizza28 = new Pizza("28. Nintendo: ", "Mario, Pikachu, Link, Samus og Kirby..................................", 60);
         pizzaList.add(pizza28);
 
-        Pizza pizza29 = new Pizza("29. CodeLab", "Jimmy, Michael, Mads og Christina......................................", 100);
+        Pizza pizza29 = new Pizza("29. CodeLab: ", "Jimmy, Michael, Mads og Christina......................................", 100);
         pizzaList.add(pizza29);
 
-        Pizza pizza30 = new Pizza("30. Vinter", "hue, handsker, halstørklæde og lange underbukser........................", 80);
+        Pizza pizza30 = new Pizza("30. Vinter: ", "hue, handsker, halstørklæde og lange underbukser........................", 80);
         pizzaList.add(pizza30);
 
         System.out.println("--------------------------------MARIOS PIZZAER-------------------------------------------");
