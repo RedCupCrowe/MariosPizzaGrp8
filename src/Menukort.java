@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Locale;
 import java.util.Scanner;
 
 public class Menukort {
@@ -47,35 +48,42 @@ public class Menukort {
         boolean bestilling = true;
         while (bestilling){
             System.out.println("vælg pizza");
-            int pizzaValg = scan.nextInt();
+            String pizzaValg = scan.nextLine();
 
-            switch (pizzaValg) {
+            switch (pizzaValg.toLowerCase(Locale.ROOT)) {
 
-            case 1:
-                System.out.println("1. Vesuvio");
-                liste.add("1. Vesuvio");
-                break;
-            case 2:
-                System.out.println("2. Amerikaner");
-                liste.add(". Amerikaner");
-                break;
-            case 3:
-                System.out.println("3. Cacciatore");
-                liste.add("3. Cacciatore");
-                break;
-            case 4:
-                System.out.println("4. Dennis");
-                liste.add("4. Dennis");
-                break;
-            case 5:
-                System.out.println("5. Bertil");
-                liste.add("5. Bertil");
-                break;
-            case 6:
-                System.out.println("6. Silvia");
-                liste.add("6. Silvia");
-                break;
-                case 99:
+                case "1":
+                case "vesuvio":
+                    System.out.println("1. Vesuvio");
+                    liste.add("1. Vesuvio");
+                    break;
+                case "2":
+                case "amerikaner":
+                    System.out.println("2. Amerikaner");
+                    liste.add(". Amerikaner");
+                    break;
+                case "3":
+                case "cacciatore":
+                    System.out.println("3. Cacciatore");
+                    liste.add("3. Cacciatore");
+                    break;
+                case "4":
+                case "dennis":
+                    System.out.println("4. Dennis");
+                    liste.add("4. Dennis");
+                    break;
+                case "5":
+                case "bertil":
+                    System.out.println("5. Bertil");
+                    liste.add("5. Bertil");
+                    break;
+                case "6":
+                case "silvia":
+                    System.out.println("6. Silvia");
+                    liste.add("6. Silvia");
+                    break;
+                case "99":
+                case "exit":
                     bestilling=false;
                     break;
 

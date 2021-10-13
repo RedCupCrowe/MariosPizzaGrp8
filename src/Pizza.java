@@ -5,14 +5,17 @@ public class Pizza {
 
 
     public String toString(){
-        return  getName() + getDescription() + getPrice() + ",-";
+        return  getName() +
+                getDescription() +
+                getPrice() +
+                ",-";
     }
 
 
-    public Pizza(String pizzaName, String pizzaDescription ,double pizzaPrice ){
-        this.name = pizzaName;
-        this.description = pizzaDescription;
-        this.price = pizzaPrice;
+    public Pizza(String name, String description ,double price ){
+        this.name = name;
+        this.description = description;
+        this.price = price;
 
 
     }
