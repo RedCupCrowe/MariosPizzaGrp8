@@ -26,6 +26,38 @@ public class Menukort {
         Pizza pizza6 = new Pizza("6. Silvia: ","tomatsauce, ost, pepperoni, rød peber, løg, oliven, og oregano...........",61);
         pizzaList.add(pizza6);
 
+        Pizza pizza15 = new Pizza("15. Petl: ","tomatsauce, ost, full java support, darth vader t-shirts.................",97);
+        pizzaList.add(pizza15);
+
+        Pizza pizza16 = new Pizza("16. Haam: ","tomatsauce, ost, sej hat, fede kuglepene................................",97);
+        pizzaList.add(pizza16);
+
+        Pizza pizza17 = new Pizza("17. Paag: ","tomatsauce, ost, hummer, garn............................................",97);
+        pizzaList.add(pizza17);
+
+        Pizza pizza18 = new Pizza("18. Kastanjemand: ","tomatsauce, ost, kastanjer, kviste................................",97);
+        pizzaList.add(pizza18);
+
+        Pizza pizza19 = new Pizza("19. Squidgame: ","tomatsauce, ost, kimchi, blæksprutte................................",456);
+        pizzaList.add(pizza19);
+
+        Pizza pizza20 = new Pizza("20. Kiwi: ","tomatsauce, ost, Kiwi, banan.............................................",97);
+        pizzaList.add(pizza20);
+
+        Pizza pizza21 = new Pizza("21. Banana: ","tomatsauce, ost, banana, kiwi..........................................",97);
+        pizzaList.add(pizza21);
+
+        Pizza pizza22 = new Pizza("22. Leroy: ","tomatsauce, ost, onyxia hjørnetand, ragnaros aske.......................",10000);
+        pizzaList.add(pizza22);
+
+        Pizza pizza23 = new Pizza("23. Diablo: ","tomatsauce, ost, Mephisto's brain, Diablo's horn, Baal's eye...........",666);
+        pizzaList.add(pizza23);
+
+        Pizza pizza24 = new Pizza("24. Restock: ","tomatsauce, ost, fordøjet pepperoni...................................",25);
+        pizzaList.add(pizza24);
+
+
+
         System.out.println("--------------------------------MARIOS PIZZAER-------------------------------------------");
         System.out.println(pizza1);
         System.out.println(pizza2);
@@ -33,8 +65,30 @@ public class Menukort {
         System.out.println(pizza4);
         System.out.println(pizza5);
         System.out.println(pizza6);
-
-
+        System.out.println(pizza7);
+        System.out.println(pizza8);
+        System.out.println(pizza9);
+        System.out.println(pizza10);
+        System.out.println(pizza11);
+        System.out.println(pizza12);
+        System.out.println(pizza13);
+        System.out.println(pizza14);
+        System.out.println(pizza15);
+        System.out.println(pizza16);
+        System.out.println(pizza17);
+        System.out.println(pizza18);
+        System.out.println(pizza19);
+        System.out.println(pizza20);
+        System.out.println(pizza21);
+        System.out.println(pizza22);
+        System.out.println(pizza23);
+        System.out.println(pizza24);
+        System.out.println(pizza25);
+        System.out.println(pizza26);
+        System.out.println(pizza27);
+        System.out.println(pizza28);
+        System.out.println(pizza29);
+        System.out.println(pizza30);
 
         Scanner scan = new Scanner(System.in);
 
@@ -81,6 +135,56 @@ public class Menukort {
                 case "silvia":
                     System.out.println("6. Silvia");
                     liste.add("6. Silvia");
+                    break;
+                case "15":
+                case "Petl":
+                    System.out.println("15. Petl");
+                    liste.add("15. Petl");
+                    break;
+                case "16":
+                case "Haam":
+                    System.out.println("16. Haam");
+                    liste.add("16. Haam");
+                    break;
+                case "17":
+                case "Paag":
+                    System.out.println("17. Paag");
+                    liste.add("17. Paag");
+                    break;
+                case "18":
+                case "Kastanjemand":
+                    System.out.println("18. Kastanjemand");
+                    liste.add("18. Kastanjemand");
+                    break;
+                case "19":
+                case "Squidgame":
+                    System.out.println("19. Squidgame");
+                    liste.add("19. Squidgame");
+                    break;
+                case "20":
+                case "Kiwi":
+                    System.out.println("20. Kiwi");
+                    liste.add("20. Kiwi");
+                    break;
+                case "21":
+                case "Banana":
+                    System.out.println("21. Banana");
+                    liste.add("21. Banana");
+                    break;
+                case "22":
+                case "Leroy":
+                    System.out.println("22. Leroy");
+                    liste.add("22. Leroy");
+                    break;
+                case "23":
+                case "Diablo":
+                    System.out.println("23. Diablo");
+                    liste.add("23. Diablo");
+                    break;
+                case "24":
+                case "Restock":
+                    System.out.println("24. Restock");
+                    liste.add("24. Restock");
                     break;
                 case "99":
                 case "exit":
