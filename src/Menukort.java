@@ -200,6 +200,26 @@ public class Menukort {
                     System.out.println("10. Silvia");
                     liste.add("6. Silvia");
                     break;
+                case "11":
+                case "Hawai":
+                    System.out.println("11. Hawai");
+                    liste.add("11. Hawai");
+                    break;
+                case "12":
+                case "Le Blissola":
+                    System.out.println("12. Le Blissola");
+                    liste.add("12. Le Blissola");
+                    break;
+                case "13":
+                case "Venezia":
+                    System.out.println("13. Venezia");
+                    liste.add("13. Venezia");
+                    break;
+                case "14":
+                case "Mafia":
+                    System.out.println("14. Mafia");
+                    liste.add("14. Mafia");
+                    break;
                 case "15":
                 case "Petl":
                     System.out.println("15. Petl");
@@ -279,26 +299,6 @@ public class Menukort {
                 case "Vinter":
                     System.out.println("30. Vinter");
                     liste.add("30. Vinter");
-                    break;
-                case "11":
-                case "Hawai":
-                    System.out.println("11. Hawai");
-                    liste.add("11. Hawai");
-                    break;
-                case "12":
-                case "Le Blissola":
-                    System.out.println("12. Le Blissola");
-                    liste.add("12. Le Blissola");
-                    break;
-                case "13":
-                case "Venezia":
-                    System.out.println("13. Venezia");
-                    liste.add("13. Venezia");
-                    break;
-                case "14":
-                case "Mafia":
-                    System.out.println("14. Mafia");
-                    liste.add("14. Mafia");
                     break;
 
                 case "99":
