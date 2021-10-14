@@ -11,7 +11,7 @@ public class Bestilling {
   public ArrayList<Pizza> getPizzaer() {
     bestillingPerPerson = new ArrayList<Pizza>();
     Menukort menukort = new Menukort();
-    menukort.getPizzaList();
+    ArrayList<Pizza> pizzaBestillingsListe = menukort.getPizzaList();
     Scanner scan = new Scanner(System.in);
 
     System.out.println("Kundens navn: ");

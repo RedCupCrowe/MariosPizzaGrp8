@@ -4,18 +4,6 @@ import java.util.Locale;
 import java.util.Scanner;
 
 public class Menukort {
-    public static void main(String[] args) {
-        Bestilling tis = new Bestilling();
-
-        ArrayList<Pizza> pizza = tis.getPizzaer();
-        System.out.println(pizza);
-
-        Menukort menukort = new Menukort();
-        ArrayList<Pizza> printMenukort = menukort.getPizzaList();
-        for(Pizza p: printMenukort) {
-            System.out.println(p.toString());
-        }
-    }
 
     public ArrayList<Pizza> getPizzaList() {
         ArrayList<Pizza> pizzaList = new ArrayList<Pizza>();
