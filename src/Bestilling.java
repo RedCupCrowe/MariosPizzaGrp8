@@ -194,9 +194,3 @@ public class Bestilling {
         System.out.println(liste.toString());
     }
 }
-
-
-
-
-
-

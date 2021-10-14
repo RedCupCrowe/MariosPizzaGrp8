@@ -16,7 +16,7 @@ public class Menukort {
         Pizza pizza3 = new Pizza("3. Cacciatore: ", "tomatsauce, ost, pepperoni og oregano................................", 57);
         pizzaList.add(pizza3);
 
-        Pizza pizza4 = new Pizza("4. Carbona: ", "tomatsauce, ost, kødsauce, spaghetti, cocktailpølser, og oregano...........", 61);
+        Pizza pizza4 = new Pizza("4. Carbona: ", "tomatsauce, ost, kødsauce, spaghetti, cocktailpølser, og oregano........", 61);
         pizzaList.add(pizza4);
 
         Pizza pizza5 = new Pizza("5. Dennis: ", "tomatsauce, ost, skinke, pepperoni, cocktailpølser og oregano............", 65);
@@ -43,23 +43,22 @@ public class Menukort {
         Pizza pizza12 = new Pizza("12. Le Blissola: ", "tomatsauce, ost, rejer og oregano.................................", 61);
         pizzaList.add(pizza12);
 
-        Pizza pizza13 = new Pizza("13. Venezia: ", "tomatsauce, ost, skinke, bacon, og oregano.............................", 61);
+        Pizza pizza13 = new Pizza("13. Venezia: ", "tomatsauce, ost, skinke, bacon, og oregano............................", 61);
         pizzaList.add(pizza13);
 
-        Pizza pizza14 = new Pizza("14. Mafia: ", "tomatsauce, ost, pepperoni, bacon, løg og oregano........................", 61);
+        Pizza pizza14 = new Pizza("14. Mafia: ", "tomatsauce, ost, pepperoni, bacon, løg og oregano.......................", 61);
         pizzaList.add(pizza14);
-
 
         Pizza pizza15 = new Pizza("15. Petl: ", "tomatsauce, ost, full java support, darth vader t-shirts.................", 97);
         pizzaList.add(pizza15);
 
-        Pizza pizza16 = new Pizza("16. Haam: ", "tomatsauce, ost, sej hat, fede kuglepene................................", 97);
+        Pizza pizza16 = new Pizza("16. Haam: ", "tomatsauce, ost, sej hat, fede kuglepene.................................", 97);
         pizzaList.add(pizza16);
 
         Pizza pizza17 = new Pizza("17. Paag: ", "tomatsauce, ost, hummer, garn............................................", 97);
         pizzaList.add(pizza17);
 
-        Pizza pizza18 = new Pizza("18. Kastanjemand: ", "tomatsauce, ost, kastanjer, kviste................................", 97);
+        Pizza pizza18 = new Pizza("18. Kastanjemand: ", "tomatsauce, ost, kastanjer, kviste...............................", 97);
         pizzaList.add(pizza18);
 
         Pizza pizza19 = new Pizza("19. Squidgame: ", "tomatsauce, ost, kimchi, blæksprutte................................", 456);
@@ -71,7 +70,7 @@ public class Menukort {
         Pizza pizza21 = new Pizza("21. Banana: ", "tomatsauce, ost, banana, kiwi..........................................", 97);
         pizzaList.add(pizza21);
 
-        Pizza pizza22 = new Pizza("22. Leroy: ", "tomatsauce, ost, onyxia hjørnetand, ragnaros aske.......................", 10000);
+        Pizza pizza22 = new Pizza("22. Leeroy Jenkins: ", "tomatsauce, ost, Onyxia hjørnetand, Ragnaros aske..............", 10000);
         pizzaList.add(pizza22);
 
         Pizza pizza23 = new Pizza("23. Diablo: ", "tomatsauce, ost, Mephisto's brain, Diablo's horn, Baal's eye...........", 666);
@@ -80,23 +79,22 @@ public class Menukort {
         Pizza pizza24 = new Pizza("24. Restock: ", "tomatsauce, ost, fordøjet pepperoni...................................", 25);
         pizzaList.add(pizza24);
 
-
-        Pizza pizza25 = new Pizza("25. Skopizza: ", "tomatsauce, gedeost, snørrebånd, såler og mudder......................", 76);
+        Pizza pizza25 = new Pizza("25. Skopizza: ", "tomatsauce, gedeost, snørrebånd, såler og mudder.....................", 76);
         pizzaList.add(pizza25);
 
-        Pizza pizza26 = new Pizza("26. Prutte: ", "våd prut, tør prut, ulækker prut og lækker prut.........................", 15);
+        Pizza pizza26 = new Pizza("26. Prutte: ", "våd prut, tør prut, ulækker prut og lækker prut........................", 15);
         pizzaList.add(pizza26);
 
-        Pizza pizza27 = new Pizza("27. Remo/Mayo: ", "remoulade, mayonaise, ranch, fransk hotdogdressing...................", 50);
+        Pizza pizza27 = new Pizza("27. Remo/Mayo: ", "remoulade, mayonaise, ranch, fransk hotdogdressing..................", 50);
         pizzaList.add(pizza27);
 
-        Pizza pizza28 = new Pizza("28. Nintendo: ", "Mario, Pikachu, Link, Samus og Kirby..................................", 60);
+        Pizza pizza28 = new Pizza("28. Nintendo: ", "Mario, Pikachu, Link, Samus og Kirby.................................", 60);
         pizzaList.add(pizza28);
 
-        Pizza pizza29 = new Pizza("29. CodeLab: ", "Jimmy, Michael, Mads og Christina......................................", 100);
+        Pizza pizza29 = new Pizza("29. CodeLab: ", "Jimmy, Michael, Mads og Christina.....................................", 100);
         pizzaList.add(pizza29);
 
-        Pizza pizza30 = new Pizza("30. Vinter: ", "hue, handsker, halstørklæde og lange underbukser........................", 80);
+        Pizza pizza30 = new Pizza("30. Vinter: ", "hue, handsker, halstørklæde og lange underbukser.......................", 80);
         pizzaList.add(pizza30);
 
         System.out.println("--------------------------------MARIOS PIZZAER-------------------------------------------");
