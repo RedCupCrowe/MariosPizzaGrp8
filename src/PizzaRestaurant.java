@@ -1,4 +1,12 @@
+import java.util.ArrayList;
+
 public class PizzaRestaurant {
+
+
+  Menukort menukort = new Menukort();
+  ArrayList<Pizza> printMenukort = menukort.getPizzaList();
+        for(Pizza p: printMenukort) {
+    System.out.println(p.toString());
   /*
   Skal kunne kalde menukortet
   skal kunne starte en bestilling

@@ -1,21 +1,33 @@
+import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.Locale;
 import java.util.Scanner;
 
 public class Bestilling {
+  //lav metode der returnere en liste med pizzaer
+  private int ID;
+  private ArrayList<Pizza> bestillingPerPerson;
 
+  public ArrayList<Pizza> getPizzaer() {
+    bestillingPerPerson = new ArrayList<Pizza>();
+    Menukort menukort = new Menukort();
+    menukort.getPizzaList();
+    Scanner scan = new Scanner(System.in);
 
-    public Bestilling () {
+    System.out.println("Kundens navn: ");
+    String navn = "25. Skopizza: ";
 
-        Scanner scan = new Scanner(System.in);
+    //System.out.println("Kundens Pizza bestilling");
+    for (Pizza p : pizzaBestillingsListe) {
+      if (navn.equalsIgnoreCase(p.getName())) {
+        bestillingPerPerson.add(p);
+      }
 
-        System.out.println("Kundens navn: ");
-        String navn = scan.nextLine();
-
-        System.out.println("Kundens Pizza bestilling");
-
-
-        ArrayList<String> liste = new ArrayList();
+    }
+    return bestillingPerPerson;
+  }
+}
+    /*
         boolean bestilling = true;
         while (bestilling){
             System.out.println("vælg pizza");
@@ -26,7 +38,7 @@ public class Bestilling {
                 case "1":
                 case "vesuvio":
                     System.out.println("1. Vesuvio");
-                    liste.add("1. Vesuvio");
+                    pizzaer.add(menukort.get);
                     break;
                 case "2":
                 case "amerikaner":
@@ -190,7 +202,15 @@ public class Bestilling {
         System.out.println();
         System.out.println("Kundens Bestilling: ");
         System.out.println("Kundes navn: " + navn);
-        System.out.println("Pizza: " );
+        System.out.println("Pizza: ");
+        System.out.println(LocalTime.now());
         System.out.println(liste.toString());
-    }
-}
+
+     */
+
+
+
+
+
+
+

@@ -1,9 +1,23 @@
+import java.awt.*;
 import java.util.ArrayList;
 import java.util.Locale;
 import java.util.Scanner;
 
 public class Menukort {
     public static void main(String[] args) {
+        Bestilling tis = new Bestilling();
+
+        ArrayList<Pizza> pizza = tis.getPizzaer();
+        System.out.println(pizza);
+
+        Menukort menukort = new Menukort();
+        ArrayList<Pizza> printMenukort = menukort.getPizzaList();
+        for(Pizza p: printMenukort) {
+            System.out.println(p.toString());
+        }
+    }
+
+    public ArrayList<Pizza> getPizzaList() {
         ArrayList<Pizza> pizzaList = new ArrayList<Pizza>();
 
 
@@ -97,7 +111,7 @@ public class Menukort {
         Pizza pizza30 = new Pizza("30. Vinter: ", "hue, handsker, halstørklæde og lange underbukser.......................", 80);
         pizzaList.add(pizza30);
 
-        System.out.println("--------------------------------MARIOS PIZZAER-------------------------------------------");
+       /* System.out.println("--------------------------------MARIOS PIZZAER-------------------------------------------");
         System.out.println(pizza1);
         System.out.println(pizza2);
         System.out.println(pizza3);
@@ -129,6 +143,9 @@ public class Menukort {
         System.out.println(pizza29);
         System.out.println(pizza30);
 
+        */
+
+            return pizzaList;
     }
 
     }
