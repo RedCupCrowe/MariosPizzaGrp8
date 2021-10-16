@@ -8,11 +8,16 @@ public class PizzaRestaurant {
         ArrayList<Pizza> pizza = tis.getPizzaer();
         System.out.println(pizza);
 
+
         Menukort menukort = new Menukort();
         ArrayList<Pizza> printMenukort = menukort.getPizzaList();
         for(Pizza p: printMenukort) {
             System.out.println(p.toString());
-    }
+
+    }}
+    public static void addToBestilling(Bestilling bestilling, int pizzaID){
+        bestilling.addPizza(Menukort.getPizzaList().get(pizzaID - 1));
+        }
 
 
 
@@ -30,5 +35,5 @@ public class PizzaRestaurant {
   skal kunne gemme bestillingen efter afslutning
   skal evt. kunne kalde statistik.
   */
-    }
+
 }

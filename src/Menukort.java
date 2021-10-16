@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class Menukort {
 
-    public ArrayList<Pizza> getPizzaList() {
+    public static ArrayList<Pizza> getPizzaList() {
         ArrayList<Pizza> pizzaList = new ArrayList<Pizza>();
 
 

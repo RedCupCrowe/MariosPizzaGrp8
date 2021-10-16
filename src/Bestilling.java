@@ -4,21 +4,23 @@ import java.util.Locale;
 import java.util.Scanner;
 
 public class Bestilling {
-  //lav metode der returnere en liste med pizzaer
+  // skal kunne oprette en bestilling til
+
+
+
+
   private int ID;
   private ArrayList<Pizza> bestillingPerPerson;
 
   public ArrayList<Pizza> getPizzaer() {
     bestillingPerPerson = new ArrayList<Pizza>();
-    Menukort menukort = new Menukort();
-    ArrayList<Pizza> pizzaBestillingsListe = menukort.getPizzaList();
     Scanner scan = new Scanner(System.in);
-
     System.out.println("Kundens navn: ");
     String navn = "25. Skopizza: ";
 
     //System.out.println("Kundens Pizza bestilling");
-    for (Pizza p : pizzaBestillingsListe) {
+    for (Pizza p : Menukort.getPizzaList()) {
+
       if (navn.equalsIgnoreCase(p.getName())) {
         bestillingPerPerson.add(p);
       }
@@ -26,6 +28,10 @@ public class Bestilling {
     }
     return bestillingPerPerson;
   }
+  public void addPizza(Pizza pizza) {
+  bestillingPerPerson.add(pizza);
+
+        }
 }
     /*
         boolean bestilling = true;
