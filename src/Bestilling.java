@@ -1,31 +1,55 @@
 import java.time.LocalTime;
 import java.util.ArrayList;
-import java.util.Locale;
-import java.util.Scanner;
+
 
 public class Bestilling {
-  //lav metode der returnere en liste med pizzaer
+  // skal kunne oprette en bestilling til
   private int ID;
-  private ArrayList<Pizza> bestillingPerPerson;
+  private LocalTime bestillingstid;
+  private LocalTime afhentningstid;
+  private ArrayList<Pizza> pizzaer;
+  private String kunde;
+  private int status; //Status for bestilling; 0 = oprettet; 1 = færdig; 2 = afhentet; -1 = annulleret;
 
-  public ArrayList<Pizza> getPizzaer() {
-    bestillingPerPerson = new ArrayList<Pizza>();
-    Menukort menukort = new Menukort();
-    ArrayList<Pizza> pizzaBestillingsListe = menukort.getPizzaList();
-    Scanner scan = new Scanner(System.in);
-
-    System.out.println("Kundens navn: ");
-    String navn = "25. Skopizza: ";
-
-    //System.out.println("Kundens Pizza bestilling");
-    for (Pizza p : pizzaBestillingsListe) {
-      if (navn.equalsIgnoreCase(p.getName())) {
-        bestillingPerPerson.add(p);
-      }
-
-    }
-    return bestillingPerPerson;
+  public Bestilling(/*long minutter*/) {
+	  pizzaer = new ArrayList<Pizza>();
+	  kunde = "";
+	  status = 0;
+	  bestillingstid = LocalTime.now();
+	 // afhentningstid = bestillingstid.plusMinutes(minutter);
   }
+  
+  public ArrayList<Pizza> getPizzaer() {
+	  return pizzaer;
+  }
+  
+  public void addPizza(Pizza pizza) {
+	  pizzaer.add(pizza);
+  }
+  
+  public void setKunde(String kunde) {
+	  this.kunde = kunde;
+  }
+  
+  public String getKunde() {
+	  return kunde;
+  }
+  
+  public int getStatus() {
+	  return status;
+  }
+  
+  public String toString() {
+	  String result = kunde + ":\n";
+	  for (Pizza p: pizzaer) {
+		  result += "-" + p.getName()+"\n";
+	  }
+	  return result;
+  }
+
+	public void setStatus(int status) {
+		this.status = status;
+	}
 }
     /*
         boolean bestilling = true;
