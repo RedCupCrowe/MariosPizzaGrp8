@@ -5,7 +5,6 @@ import java.util.ArrayList;
 
 public class Bestilling {
   // skal kunne oprette en bestilling til
-  private int ID;
   private LocalTime bestillingstid;
   private LocalTime afhentningstid;
   private ArrayList<Pizza> pizzaer;
@@ -42,7 +41,7 @@ public class Bestilling {
   
   public String toString() {
 	  String result = kunde + ":\n";
-	  result += afhentningstid;
+	  result += afhentningstid + "\n";
 	  for (Pizza p: pizzaer) {
 		  result += "-" + p.getName()+"\n";
 	  }
