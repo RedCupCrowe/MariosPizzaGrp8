@@ -50,7 +50,7 @@ public class Menukort {
 	        Pizza pizza15 = new Pizza("15. Petl: ", "tomatsauce, ost, full java support, darth vader t-shirts.................", 97);
 	        pizzaList.add(pizza15);
 
-	        Pizza pizza16 = new Pizza("16. Haam: ", "tomatsauce, ost, sej hat, fede kuglepene.................................", 97);
+	        Pizza pizza16 = new Pizza("16. Haam: ", "tomatsauce, ost, sej hat, fede kuglepenne.................................", 97);
 	        pizzaList.add(pizza16);
 
 	        Pizza pizza17 = new Pizza("17. Paag: ", "tomatsauce, ost, hummer, garn............................................", 97);
@@ -294,7 +294,7 @@ public class Menukort {
 
          System.out.println();
          System.out.println("Kundens Bestilling: ");
-         System.out.println("Kundes navn: " + navn);
+         System.out.println("K+undes navn: " + navn);
          System.out.println("Pizza: " );
          System.out.println(liste.toString());
     } */

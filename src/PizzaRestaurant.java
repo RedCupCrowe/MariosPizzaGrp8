@@ -1,3 +1,4 @@
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class PizzaRestaurant {
@@ -7,33 +8,50 @@ public class PizzaRestaurant {
     public static void main(String[] args) {
         Menukort.initMenukort();
         while (true) {
-            System.out.println("Indtast kommando...");
+            System.out.println("------------KOMMANDOER------------");
+            System.out.println("Ny           = Opret ny bestilling");
+            System.out.println("Menu         = Se menukort");
+            System.out.println("Bestillinger = Se alle bestillinger");
+            System.out.println("Bestilling   = Se konkret bestilling");
+            System.out.println("Afslut       = Afslut igangværende bestilling");
+            System.out.println("Annuller     = Annuller bestilling");
+            System.out.println("Udlever      = Udlever bestilling");
+            System.out.println("Skriv en af ovenstående kommandoer:");
             String command = scan.nextLine();
             System.out.println(command);
 
             switch (command.toLowerCase()) {
                 case "ny":
+                    //Oprettelse af ny bestilling
                     nyBestilling();
                     break;
                 case "menu":
+                    //Se menukortet
                     Menukort.printMenukort();
                     break;
                 case "bestillinger":
+                    //Bestillings liste
                     seBestillinger();
                     seBestilling();
                     break;
                 case "bestilling":
+                    //Se Konkret bestilling ud fra en liste
                     seBestilling();
                     break;
                 case "afslut":
+                    //Afslut igangværende bestilling
                     seBestillinger();
                     afslutBestilling();
                     break;
                 case "annuller":
+                    //Annuller en bestilling
                     annullerBestilling();
                 case "udlever":
+                    //Udlevering af bestilling
                     afhentBestilling();
                 default:
+                    //Nedenstående skrives ud hvis du ikke skriver en af kommandoerne
+                    System.out.println("Det forstår jeg ikke.");
                     break;
             }
         }
