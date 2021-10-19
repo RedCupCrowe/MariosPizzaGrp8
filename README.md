@@ -1,11 +1,11 @@
 # MariosPizzaGrp8
 
-Dette projekt er lavet og godkendt af gruppe 8, som har følgende medlemmer:
+Dette projekt er lavet og godkendt af gruppe 8 - navn (github-navn):
 
-Valdemar Krarup Johansen
+Valdemar Krarup Johansen     (RedCupCrowe)
 
-Naomi Marie Rasmussen
+Naomi Marie Rasmussen           (naom0649)
 
-Frederik Tranders Christensen
+Frederik Tranders Christensen (FrederikTC)
 
-Johannes Fauerskov Sloth
+Johannes Fauerskov Sloth   (JohannesSloth)
