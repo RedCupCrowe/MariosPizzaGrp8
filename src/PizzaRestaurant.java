@@ -16,7 +16,7 @@ public class PizzaRestaurant {
             System.out.println("Afslut       = Afslut igangværende bestilling");
             System.out.println("Annuller     = Annuller bestilling");
             System.out.println("Udlever      = Udlever bestilling");
-            System.out.println("Skriv en af ovenstående kommandoer:");
+            System.out.println("Skriv en af ovenstående kommandoer:\n");
             String command = scan.nextLine();
             System.out.println(command);
 
@@ -69,7 +69,7 @@ public class PizzaRestaurant {
             if (str.equals("afslut")) {
                 finished = true;
             } else {
-                //Try catch
+                try{
                 int pizzaID = Integer.parseInt(str) - 1;
                 if (pizzaID >= 0 && pizzaID < Menukort.getPizzaList().size()) {
                     Pizza pizza = Menukort.getPizzaList().get(pizzaID);
@@ -77,6 +77,8 @@ public class PizzaRestaurant {
                     bestilling.addPizza(pizza);
                 } else {
                     System.out.println("Ugyldigt tal indtastet");
+                }}catch (Exception e){
+                    System.out.println("Det var ikke et tal, indtast venligst et heltal");
                 }
 
             }
@@ -85,8 +87,12 @@ public class PizzaRestaurant {
         System.out.println("Indtast kundens navn: ");
         String str = scan.nextLine();
         bestilling.setKunde(str);
+        System.out.println("Om hvor længe skal pizzaen afhentes?");
+        long time = scan.nextLong();
+        bestilling.setAfhentningstid(time);
         System.out.println("Bestilling oprettet");
         Storage.addBestilling(bestilling);
+        scan.nextLine();
     }
 
     public static void seBestillinger() {
@@ -124,37 +130,3 @@ public class PizzaRestaurant {
         Storage.getBestillinger().get(Integer.parseInt(str)).setStatus(2);
     }
 }
-	
-//	ArrayList<Pizza> pizza = tis.getPizzaer();
-//        System.out.println(pizza);
-//
-//
-//        Menukort menukort = new Menukort();
-//        ArrayList<Pizza> printMenukort = menukort.getPizzaList();
-//        for(Pizza p: printMenukort) {
-//            System.out.println(p.toString());
-//
-//    }}
-//    public static void addToBestilling(Bestilling bestilling, int pizzaID){
-//        bestilling.addPizza(Menukort.getPizzaList().get(pizzaID - 1));
-//    }
-
-        //}
-        //ArrayList<Pizza> pizza = tis.getPizzaer();
-        //System.out.println(pizza);
-
-
-        /*Menukort menukort = new Menukort();
-        ArrayList<Pizza> printMenukort = menukort.getPizzaList();
-        for (Pizza p : printMenukort) {
-            System.out.println(p.toString());
-
-        }
-  /*
-  Skal kunne kalde menukortet
-  skal kunne starte en bestilling
-  skal kunne anullere en bestilling imens og efter den er lavet
-  skal kunne afslutte en bestilling
-  skal kunne gemme bestillingen efter afslutning
-  skal evt. kunne kalde statistik.
-  */
